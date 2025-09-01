@@ -48,7 +48,7 @@ model Task {
   status      TaskStatusType
   priority    TaskPriorityType
 
-  user User @relation(fields: [userId], references: [id])
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@map("tasks")
 }
