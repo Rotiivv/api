@@ -23,8 +23,8 @@ export class AuthController {
   }
 
   @isPublic()
-  @Post('signin')
   @UsePipes(new ValidationPipe())
+  @Post('signin')
   signin(@Body() signinDto: SigninDto) {
     return this.authService.signin(signinDto);
   }
