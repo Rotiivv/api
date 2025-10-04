@@ -15,6 +15,7 @@ services:
     volumes:
       - taskmanager_data:/var/lib/postgresql/data
 volumes:
+  taskmanager_data
 
 
   
