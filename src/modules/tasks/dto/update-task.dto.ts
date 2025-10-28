@@ -7,8 +7,7 @@ export class UpdateTaskDto {
   title: string;
 
   @IsString()
-  @IsNotEmpty()
-  description: string;
+  description?: string;
 
   @IsNotEmpty()
   @IsEnum(TaskStatusType)

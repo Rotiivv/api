@@ -2,7 +2,7 @@ services:
   postgres:
     image: postgres:15
     container_name: taskmanager-db
-    restart: unless-sttoped
+    restart: unless-stopped
 
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
@@ -15,7 +15,7 @@ services:
     volumes:
       - taskmanager_data:/var/lib/postgresql/data
 volumes:
-  taskmanager_data
+  taskmanager_data:
 
 
   
