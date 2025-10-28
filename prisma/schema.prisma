@@ -44,7 +44,7 @@ model Task {
   id          String           @id @default(uuid()) @db.Uuid
   userId      String           @db.Uuid
   title       String
-  description String
+  description String?
   status      TaskStatusType
   priority    TaskPriorityType
 
